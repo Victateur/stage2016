@@ -153,6 +153,62 @@ Ainsi, si $b$ est rationnel, alors le produit $\frac{\sqrt[4]{3}}{2}b$ sera auss
 Par conséquent, $a$ et $b$ ne peuvent pas être tous les deux rationnels.
 
 \end{sol}
+
+\begin{sol}[66](résolu par Sebastien Labbé)
+Considérons un rectangle $ABCD$ qui touche un coin du grand rectangle $A$. Soient $M$ et $N$ les milieux respectifs de $[BC]$ et $[CD]$. Soient $EFGH$ et $JKLO$ deux rectangles qui touchent $M$ et $N$. Les rectangles $ABCD$ et $EFGH$ conviennent si $G$ appartient à $[BC]$. De même pour $ABCD$ et $JKLO$ si $K$ appartient à $[CD]$. Or l'un des deux est vrai, sans quoi les rectangles $EFGH$ et $JKLO$ s'intersecteraient. Ainsi on a trouvé une paire de rectangles telle que demandée.
+
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(4.885927230046947,13.573917050691264) rectangle (13.015927230046943,22.09391705069129);
+\draw (6.,20.)-- (6.,17.647419354838743);
+\draw (6.,17.647419354838743)-- (6.,15.);
+\draw (6.,15.)-- (10.692388497652576,15.);
+\draw (10.692388497652576,15.)-- (10.692388497652576,20.);
+\draw (6.,20.)-- (8.273427230046945,20.);
+\draw (8.273427230046945,19.56)-- (9.773427230046945,19.56);
+\draw (8.273427230046945,20.)-- (10.692388497652576,20.);
+\draw (8.273427230046945,20.)-- (8.273427230046945,17.647419354838743);
+\draw (6.,17.647419354838743)-- (8.273427230046945,17.647419354838743);
+\draw (6.889800469483566,17.647419354838746)-- (6.889800469483566,15.867419354838745);
+\draw (6.889800469483566,15.867419354838745)-- (8.2,15.867419354838743);
+\draw (8.2,17.647419354838743)-- (8.2,15.867419354838743);
+\draw (8.273427230046945,18.34)-- (9.773427230046945,18.34);
+\draw (9.773427230046945,19.56)-- (9.773427230046945,18.34);
+\draw (7.1367136150234725,18.823709677419373)-- (7.544900234741783,16.757419354838746);
+\begin{scriptsize}
+\draw [fill=black] (6.,20.) circle (0.5pt);
+\draw[color=black] (5.854465962441313,20.0424423963134) node {$A$};
+\draw [fill=black] (8.273427230046945,20.) circle (0.5pt);
+\draw[color=black] (8.268656103286382,20.2387557603687) node {$D$};
+\draw [fill=black] (6.,17.647419354838743) circle (0.5pt);
+\draw[color=black] (5.84969483568075,17.657235023041505) node {$B$};
+\draw [fill=black] (8.273427230046945,17.647419354838743) circle (0.5pt);
+\draw[color=black] (8.259113849765255,17.39221198156685) node {$C$};
+\draw [fill=black] (8.273427230046945,18.823709677419373) circle (0.5pt);
+\draw[color=black] (8.426103286384974,18.835115207373306) node {$N$};
+\draw [fill=black] (7.1367136150234725,17.647419354838743) circle (0.5pt);
+\draw[color=black] (6.9995363849765235,17.362764976958555) node {$M$};
+\draw [fill=black] (6.889800469483566,17.647419354838746) circle (0.5pt);
+\draw[color=black] (6.885029342723002,17.951705069124454) node {$F$};
+\draw [fill=black] (8.2,17.647419354838743) circle (0.5pt);
+\draw[color=black] (8.206631455399059,17.873179723502336) node {$G$};
+\draw [fill=black] (8.273427230046945,18.34) circle (0.5pt);
+\draw[color=black] (8.163691314553988,18.55046082949312) node {$K$};
+\draw [fill=black] (8.273427230046945,19.56) circle (0.5pt);
+\draw[color=black] (8.306825117370888,19.659631336405564) node {$J$};
+\draw [fill=black] (9.773427230046945,19.56) circle (0.5pt);
+\draw[color=black] (9.914694835680747,19.61055299539174) node {$O$};
+\draw [fill=black] (6.889800469483566,15.867419354838745) circle (0.5pt);
+\draw[color=black] (6.775293427230045,15.664654377880211) node {$E$};
+\draw [fill=black] (9.773427230046945,18.34) circle (0.5pt);
+\draw[color=black] (9.900381455399057,18.344331797235053) node {$L$};
+\draw [fill=black] (8.2,15.867419354838743) circle (0.5pt);
+\draw[color=black] (8.287740610328635,15.674470046082975) node {$H$};
+\draw [fill=uuuuuu] (7.544900234741783,16.757419354838746) circle (1.5pt);
+\draw [fill=uuuuuu] (7.1367136150234725,18.823709677419373) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{sol}
 \begin{sol}[75](Résolu par Dario Shariatan)
 
 Déterminons d'abord de combien de manières différentes il est possible de carreler un rectangle de taille $2 \times n$ avec des carreaux incolores. Notons $F(n)$ ce nombre.
